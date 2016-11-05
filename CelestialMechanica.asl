@@ -36,6 +36,7 @@ update
 		{
 		vars.cinematic = false;
 		}
+	}
 }
 
 split
