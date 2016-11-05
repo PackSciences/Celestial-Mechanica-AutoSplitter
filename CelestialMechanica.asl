@@ -9,8 +9,8 @@ init
 }
 startup
 {
-	settings.Add("autostart_user", default_value = false, description = "Enables the autostart of the run (de-activated by default)", parent = null);
-	settings.Add("gametime_user", default_value = true, description = "Enables the game time (uses the game memory) (activated by default)", parent = null);
+	settings.Add("autostart_user", false, "Enables the autostart of the run (de-activated by default)", null);
+	settings.Add("gametime_user", true, "Enables the game time (uses the game memory) (activated by default)", null);
 }
 reset
 {
