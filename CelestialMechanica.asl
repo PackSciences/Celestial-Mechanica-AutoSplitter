@@ -10,14 +10,16 @@ vars.cinematic = true;
 
 reset
 {
-	return (current.time == 27 || vars.cinematic);
+	//return (current.time == 27 || vars.cinematic);
 	// 27 is strangely the value for menu
 	// 45 is the value for cinematic
+	// Edit : Removed
 }
 
 start
 {
-	return (current.time > 45 && vars.cinematic == false);
+	//return (current.time > 45 && vars.cinematic == false);
+	// Edit: Removed
 }
 update
 {
