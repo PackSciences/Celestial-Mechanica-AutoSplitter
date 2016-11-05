@@ -2,7 +2,7 @@ state("CelestialMechanica")
 {
 	int time : "CelestialMechanica.exe", 0x00593F40;
 	settings.Add("autostart_user", default_value = false, description = "Enables the autostart of the run (de-activated by default)", parent = null)
-	settings.Add("gametime_user", default_value = true, description = "Enables the game time (uses the game's memory) (activated by default)", parent = null)
+	settings.Add("gametime_user", default_value = true, description = "Enables the game time (uses the game memory) (activated by default)", parent = null)
 }
 // CelestialMechanica.exe+593F40
 init 
@@ -18,9 +18,6 @@ reset
 	// 27 is strangely the value for menu
 	// 45 is the value for cinematic
 	}
-	else
-	{
-	return (false);
 }
 
 start
@@ -52,7 +49,9 @@ gameTime
 	{
 		print(current.time.ToString());
 		if (vars.cinematic == false)
+			{
 				return TimeSpan.FromMilliseconds(current.time*10);
-				// Time is in centiseconds for some reason
+			}
+			// Time is in centiseconds for some reason
 	}
 }
