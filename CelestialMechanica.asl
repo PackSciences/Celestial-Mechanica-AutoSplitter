@@ -36,5 +36,5 @@ gameTime
 {	
 	print(current.time.ToString());
 	if (vars.cinematic == false)
-			return TimeSpan.FromMilliseconds(current.time);
+			return TimeSpan.FromMilliseconds(current.time*10);
 }
